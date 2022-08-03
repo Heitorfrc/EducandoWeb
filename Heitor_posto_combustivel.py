@@ -9,23 +9,18 @@ quantidades de cada combustivel
 alcool = 0
 gasolina = 0
 diesel = 0
-
-codigo = int(input("Informe um código(1, 2, 3) ou 4 para parar: "))
+codigo = 0
 
 while codigo != 4 :
     if codigo == 1 :
-        alcool += 1
-        codigo = int(input("Informe um código(1, 2, 3) ou 4 para parar: "))        
-    if codigo == 2 :
+        alcool += 1     
+    elif codigo == 2 :
         gasolina += 1
-        codigo = int(input("Informe um código(1, 2, 3) ou 4 para parar: "))
-    if codigo == 3 :
+    elif codigo == 3 :
         diesel += 1
-        codigo = int(input("Informe um código(1, 2, 3) ou 4 para parar: "))
-    if codigo < 1 or codigo > 4 :
-        codigo = int(input("Informe um código(1, 2, 3) ou 4 para parar: "))
-else :
-    print ("Muito Obrigado!")
-    print ("Álcool: ", alcool)
-    print ("Gasolina: ", gasolina)
-    print ("Diesel: ", diesel)
+    codigo = int(input("Informe um código(1, 2, 3) ou 4 para parar: "))
+      
+print ("Muito Obrigado!")
+print ("Álcool: ", alcool)
+print ("Gasolina: ", gasolina)
+print ("Diesel: ", diesel)
